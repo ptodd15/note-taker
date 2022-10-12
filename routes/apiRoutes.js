@@ -6,7 +6,6 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const readFileAsync = util.promisify(fs.readFile);
 var notesData;
 
-//module.exports = function(app) {
 // GET request
 app.get("/notes", (req, res) => {
   // Reads the notes from JSON file
