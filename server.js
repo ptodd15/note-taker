@@ -6,8 +6,6 @@ const PORT = process.env.PORT || 3001;
 
 // Folder to retrieve CSS and JS Files
 app.use(express.static("public"));
-
-// Middleware to parse the JSON data
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use('/api', apiRoutes);

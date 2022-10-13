@@ -1,4 +1,3 @@
-// const notesData = require("../data/notesData");
 const fs = require("fs");
 const util = require("util");
 const app = require("express").Router();
@@ -16,7 +15,7 @@ app.get("/notes", (req, res) => {
   });
 });
 
-// POST  request
+// POST request
 app.post("/notes", (req, res) => {
   readFileAsync("db/db.json", "utf8").then(function (data) {
     // Parse data to get an array of objects
